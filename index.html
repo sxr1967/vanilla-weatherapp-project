@@ -17,73 +17,112 @@
 
   <body>
     <div class="container">
-      <div class="weatherapp-border">
+      <div class="weatherappUI">
         <div class="row">
-          <div class="col-6">
-            search bar
+          <div class="col-8">
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="search-engine"
+                  placeholder="Search new city..."
+                />
+              </div>
+            </form>
           </div>
-          <div class="col-3">
-            search button
+          <div class="col-2" class="search-button">
+            <button type="submit" class="btn btn-primary btn-sm">Search</button>
           </div>
-          <div class="col-3">
-            current button
+          <div class="col-2" class="current-button">
+            <button type="button" class="btn btn-success btn-sm">
+              Current
+            </button>
           </div>
         </div>
         <div class="row">
-          <div class="col-8">
+          <div class="col-8" class="display-overview">
             <h1>
               CITY NAME
             </h1>
             <ul>
-              <li>
+              <li class="displaytime">
                 Friday 5:00 pm
               </li>
-              <li>
-                8/14/2020
+              <li class="display-date">
+                August 14, 2020
               </li>
             </ul>
           </div>
         </div>
         <div class="row">
           <div class="col-7">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="Clear"
-            />
-            <strong> -5 </strong>
-            <small> ˚C | ˚F </small>
+            <div class="clear-fix">
+              <div class="primary-weather-display">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Clear"
+                  width="70"
+                />
+                <strong> 12 </strong>
+                <span class="units">
+                  <a href="#" id="cel">˚C </a>
+                  |
+                  <a href="#" id="far">˚F</a>
+                </span>
+              </div>
+            </div>
           </div>
           <div class="col-5">
             <div class="row" class="wind">
-              <img src="image/WeatherIcons/PNG/Grey/Windy.png" alt="wind" />
-              Wind <small> kms/hr</small>
+              <div class="col-2">
+                <img
+                  src="image/WeatherIcons/PNG/Grey/Windy.png"
+                  alt="wind"
+                  width="16"
+                  height="16"
+                />
+              </div>
+              <div class="col-10">Wind <small> kms/hr</small></div>
             </div>
+
             <div class="row" class="precipitation">
-              <img
-                src="image/WeatherIcons/PNG/Grey/Precipitation.png"
-                alt="Precipitation"
-              />
-              Precipitation: 0 <small> % </small>
+              <div class="col-2">
+                <img
+                  src="image/WeatherIcons/PNG/Grey/Precipitation.png"
+                  alt="Precipitation"
+                  width="16"
+                  height="16"
+                />
+              </div>
+              <div class="col-10">Precipitation: 0 <small> % </small></div>
             </div>
             <div class="row" class="humidity">
-              <img
-                src="image/WeatherIcons/PNG/Grey/Humidity.png"
-                alt="Humidity"
-              />
-              Humidity: 75
-              <small> % </small>
+              <div class="col-2">
+                <img
+                  src="image/WeatherIcons/PNG/Grey/Humidity.png"
+                  alt="Humidity"
+                  width="16"
+                  height="16"
+                />
+              </div>
+              <div class="col-10">
+                Humidity: 75
+                <small> % </small>
+              </div>
             </div>
           </div>
         </div>
-        <small>
-          <a
-            href="https://github.com/sxr1967/vanilla-weatherapp-project"
-            target="_blank"
-            >Open-Source code</a
-          >
-          by Snehal Ingle
-        </small>
       </div>
+      <footer>
+        <a
+          href="https://github.com/sxr1967/vanilla-weatherapp-project"
+          target="_blank"
+        >
+          Open-Source code</a
+        >
+        by Snehal Ingle
+      </footer>
     </div>
 
     <script src="src/app.js"></script>

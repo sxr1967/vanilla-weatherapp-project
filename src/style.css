@@ -1,3 +1,58 @@
+body {
+  font-family: arial-narrow;
+  background-color: rgb(221, 193, 193);
+}
+.weatherappUI {
+  max-width: 600px;
+  margin: 150px auto;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    45deg,
+    #4d2526 0%,
+    #922a0d 9%,
+    #ca7d68 100%
+  );
+  opacity: 90%;
+}
+
 h1 {
-  color: red;
+  color: 24px;
+  margin: 0 auto;
+  padding: 10px 5px 5px 2px;
+}
+ul,
+li {
+  margin: 0 auto;
+  padding: 0 0 10px 2px;
+  line-height: 3px;
+  list-style: none;
+  font-size: 12px;
+}
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.primary-weather-display strong {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1px;
+}
+.primary-weather-display img {
+  margin-bottom: 30px;
+  padding: 3px;
+}
+.units {
+  position: relative;
+  font-size: 15px;
+  top: -32px;
+  left: -16px;
+}
+.footer {
+  text-align: center;
+}
+.display-overview {
+  padding: 100px;
 }
