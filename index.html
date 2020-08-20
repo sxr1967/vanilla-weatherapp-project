@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Course 2- final Project</title>
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -42,15 +44,18 @@
         </div>
         <div class="row">
           <div class="col-8" class="display-overview">
-            <h1>
+            <h1 id="city">
               CITY NAME
             </h1>
             <ul>
-              <li class="displaytime">
+              <li class="display-time" id="time">
                 Friday 5:00 pm
               </li>
-              <li class="display-date">
+              <li class="display-date" id="date">
                 August 14, 2020
+              </li>
+              <li class="display-weatherdescription" id="weatherDescription">
+                Clear
               </li>
             </ul>
           </div>
@@ -64,7 +69,7 @@
                   alt="Clear"
                   width="70"
                 />
-                <strong> 12 </strong>
+                <strong id="temperature"> 12 </strong>
                 <span class="units">
                   <a href="#" id="cel">˚C </a>
                   |
@@ -74,7 +79,7 @@
             </div>
           </div>
           <div class="col-5">
-            <div class="row" class="wind">
+            <div class="row" class="windimg">
               <div class="col-2">
                 <img
                   src="image/WeatherIcons/PNG/Grey/Windy.png"
@@ -83,10 +88,13 @@
                   height="16"
                 />
               </div>
-              <div class="col-10">Wind <small> kms/hr</small></div>
+              <div class="col-10" class="display-wind">
+                Wind: <span id="wind"></span>
+                <small> kms/hr</small>
+              </div>
             </div>
 
-            <div class="row" class="precipitation">
+            <div class="row" class="precipitationimg">
               <div class="col-2">
                 <img
                   src="image/WeatherIcons/PNG/Grey/Precipitation.png"
@@ -95,9 +103,11 @@
                   height="16"
                 />
               </div>
-              <div class="col-10">Precipitation: 0 <small> % </small></div>
+              <div class="col-10" class="display-presipitation">
+                Precipitation: 0 <small> % </small>
+              </div>
             </div>
-            <div class="row" class="humidity">
+            <div class="row" class="humidityimg">
               <div class="col-2">
                 <img
                   src="image/WeatherIcons/PNG/Grey/Humidity.png"
@@ -106,8 +116,8 @@
                   height="16"
                 />
               </div>
-              <div class="col-10">
-                Humidity: 75
+              <div class="col-10" class="display-humidity">
+                Humidity: <span id="humidity"></span>
                 <small> % </small>
               </div>
             </div>

@@ -28,7 +28,7 @@ li {
   padding: 0 0 10px 2px;
   line-height: 3px;
   list-style: none;
-  font-size: 12px;
+  font-size: 11px;
 }
 li:first-letter {
   text-transform: capitalize;
@@ -48,11 +48,16 @@ li:first-letter {
   position: relative;
   font-size: 15px;
   top: -32px;
-  left: -16px;
+  left: 2px;
 }
 .footer {
   text-align: center;
 }
 .display-overview {
   padding: 100px;
+}
+.display-wind,
+.display-presipitation,
+.display-humidity {
+  font-size: 100px;
 }
